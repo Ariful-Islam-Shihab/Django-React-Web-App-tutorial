@@ -20,6 +20,7 @@ function ProtectedRoute({children}){
             if(res.status==200){
                 localStorage.getItem(ACCESS_TOKEN,res.data.access)
                 setISAuthorized(true)
+                alert('restoken authorized')
             }else{
                 setISAuthorized(false)
             }
